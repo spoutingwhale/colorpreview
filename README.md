@@ -1,7 +1,7 @@
 # colorpreview
 Simple telegram bot to display color and it's basic information via inline. Written in aiogram 3.x.
 
-[{ прочитать на русском }](https://github.com/hlnmplus/colorpreview/blob/main/README_RU.md)
+[{ прочитать на русском }](https://github.com/spoutingwhale/colorpreview/blob/main/README_RU.md)
 
 ## Installation
 
@@ -10,7 +10,7 @@ Simple telegram bot to display color and it's basic information via inline. Writ
 - `cd cpreview/Scripts && activate.bat` on Windows command prompt
 - `cpreview/Scripts/activate.ps1` on Windows PowerShell
 - `cpreview/bin/activate` on Linux
-3. Clone repository locally using `git clone https://github.com/hlnmplus/colorpreview`
+3. Clone repository locally using `git clone https://github.com/spoutingwhale/colorpreview`
 4. Run `cd colorpreview` to move to bot directory
 5. Run `python3 -m pip install -r requirements.txt` to install bot dependencies
 6. Set your Telegram Bot API token in credentials.py file
