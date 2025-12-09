@@ -1,6 +1,6 @@
 import asyncio
 import logging
-import utils.utils
+from utils import utils
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from aiogram.client.default import DefaultBotProperties
@@ -42,6 +42,7 @@ async def inline(query: types.InlineQuery):
         rgb = query_text.split(' ')
         color = '%02x%02x%02x' % (int(rgb[0]), int(rgb[1]), int(rgb[2]))
         if utils.ishex(color) == True:
+            title = strings[code]['title'].replace("<input>", query_text)
             response = utils.makeresponse(utils.generate(color), query_text, strings[code]['output'])
             strings[code]['title'].replace("<input>", query_text)
         else:
