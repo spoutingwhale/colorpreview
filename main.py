@@ -1,6 +1,6 @@
 import asyncio
 import logging
-import utils.utils as c
+import utils.utils
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from aiogram.client.default import DefaultBotProperties
@@ -30,27 +30,27 @@ async def inline(query: types.InlineQuery):
     if query.from_user.language_code not in strings.keys(): code = 'en'
     else: code = query.from_user.language_code
     query_text = query.query
-    if c.ishex(query_text) == True:
+    if utils.ishex(query_text) == True:
         if len(query_text) == 7:
             color = query_text[1:]
         else:
             color = query_text
 
         title = strings[code]['title'].replace("<input>", query_text)
-        response = c.makeresponse(c.generate(color), query_text, strings[code]['output'])
-    elif (len(query_text.split(' ')) == 3) and all(c.isnum(c) for c in query_text.split(' ')) and all(int(c) <= 255 for c in query_text.split(' ')) and all(int(c) >= 0 for c in query_text.split(' ')):
+        response = utils.makeresponse(utils.generate(color), query_text, strings[code]['output'])
+    elif (len(query_text.split(' ')) == 3) and all(utils.isnum(c) for c in query_text.split(' ')) and all(int(c) <= 255 for c in query_text.split(' ')) and all(int(c) >= 0 for c in query_text.split(' ')):
         rgb = query_text.split(' ')
         color = '%02x%02x%02x' % (int(rgb[0]), int(rgb[1]), int(rgb[2]))
-        if c.ishex(color) == True:
-            response = c.makeresponse(c.generate(color), query_text, strings[code]['output'])
+        if utils.ishex(color) == True:
+            response = utils.makeresponse(utils.generate(color), query_text, strings[code]['output'])
             strings[code]['title'].replace("<input>", query_text)
         else:
             response = strings[code]['badcolor']
             title = strings[code]['badcolor']
-    elif query_text in c.db.keys():
-        color = c.hexbycolorname(query_text)
+    elif query_text in utils.db.keys():
+        color = utils.hexbycolorname(query_text)
         title = strings[code]['title'].replace("<input>", query_text)
-        response = c.makeresponse(c.generate(color), query_text, strings[code]['output'])
+        response = utils.makeresponse(utils.generate(color), query_text, strings[code]['output'])
     else:
         response = strings[code]['badcolor']
         title = strings[code]['badcolor']
