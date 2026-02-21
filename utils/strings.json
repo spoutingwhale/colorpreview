@@ -1,14 +1,14 @@
 {
     "ru": {
-        "output": "<a href = 'https://singlecolorimage.com/get/<hex>/400x100'>🎨</a><b> Информация о цвете <input></b>\n<b>Имя</b>: <name>\n\n<b>HEX</b>: <code><hex></code>\n<b>RGB</b>: <code>rgb<rgb></code>\n<b>HSV</b>: <code>hsv<hsv></code>\n<b>HSL</b>: <code>hsl<hsl></code>\n<b>CMYK</b>: <code>cmyk<cmyk></code>",
+        "output": "<a href = 'https://singlecolorimage.com/get/<hex>/400x100'>🎨</a><b> <input></b>\n<b>Имя</b>: <name>\n\n<b>HEX</b>: <code><hex></code>\n<b>RGB</b>: <code>rgb<rgb></code>\n<b>HSV</b>: <code>hsv<hsv></code>\n<b>HSL</b>: <code>hsl<hsl></code>\n<b>CMYK</b>: <code>cmyk<cmyk></code>",
         "greet": "<b>👋 Привет!</b>\n\nЭтот бот позволяет выводить цвет, его базовую информацию и представление в других системах в чат.\n\n<code>@colorpreviewbot ff7538</code>\nТак же, Вы можете использовать формат RGB в качестве входной:\n<code>@colorpreviewbot 255 117 56</code>\nИли просто по названию цвета:\n<code>@colorpreviewbot Orange</code>\n\nБот имеет <a href = 'https://github.com/spoutingwhale/colorpreview'>открытый исходный код</a>.",
-        "title": "🎨 Информация о цвете <input>",
+        "title": "🎨 <input>",
         "badcolor": "😓 Неподдерживаемый или некорректный цвет"
     },
     "en": {
-        "output": "<a href = 'https://singlecolorimage.com/get/<hex>/400x100'>🎨</a><b> Color information <input></b>\n<b>Name</b>: <name>\n\n<b>HEX</b>: <code><hex></code>\n<b>RGB</b>: <code>rgb<rgb></code>\n<b>HSV</b>: <code>hsv<hsv></code>\n<b>HSL</b>: <code>hsl<hsl></code>\n<b>CMYK</b>: <code>cmyk<cmyk></code>",
+        "output": "<a href = 'https://singlecolorimage.com/get/<hex>/400x100'>🎨</a><b> <input></b>\n<b>Name</b>: <name>\n\n<b>HEX</b>: <code><hex></code>\n<b>RGB</b>: <code>rgb<rgb></code>\n<b>HSV</b>: <code>hsv<hsv></code>\n<b>HSL</b>: <code>hsl<hsl></code>\n<b>CMYK</b>: <code>cmyk<cmyk></code>",
         "greet": "<b>👋 Hello!</b>\n\nThis bot displays a color, it's basic information, and representations in other color systems in chat.\n\n<code>@colorpreviewbot ff7538</code>\nYou can also use RGB format as input:\n<code>@colorpreviewbot 255 117 56</code>\nOr simply by the color name:\n<code>@colorpreviewbot Orange</code>\n\nThe bot is open source: <a href = 'https://github.com/spoutingwhale/colorpreview'>source code</a>.",
-        "title": "🎨 Color information <input>",
+        "title": "🎨 <input>",
         "badcolor": "😓 Unsupported or invalid color"
     }
 }
